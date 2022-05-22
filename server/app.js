@@ -3,8 +3,8 @@ const app = express();
 const port = 8080;
 const jwt = require('jsonwebtoken');
 
-
 const cors = require("cors");
+
 app.use(cors());
 
 const bodyParser = require("body-parser");
