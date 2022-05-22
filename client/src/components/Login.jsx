@@ -1,6 +1,6 @@
 import React from "react";
-import { useEffect, useState } from "react";
-import { Link, useNavigate } from 'react-router-dom';
+import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 const Login = () => {
 
 	const [email, setEmail] = useState('');
@@ -13,7 +13,6 @@ const Login = () => {
 			email: email,
 			password: password,
 		};
-		//-----POST api for login
 		fetch('http://localhost:8080/login', {
 			method: 'POST',
 			headers: {
